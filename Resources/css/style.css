@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    background-color: #ffffff;
+    color: #555;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(69, 24, 34, 0.7)),url('imgcss/salad_photo.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+h1{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+    background-color: #e67e22;
+    color: #fff;
+    border: 1px solid #e67e22;
+    margin-right: 25px;
+}
+.btn-ghost:visited,
+.btn-ghost:link{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.btn:hover,
+.btn:active{
+    background-color: #e67e22;
+}
+.btn-ghost:hover,
+.btn-ghost:active{
+    color: #fff;
+    border: 1px solid #e67e22;
+}
+.btn-full:hover,
+.btn-full:active{
+    color: #fff;
+    border: 1px solid #e67e22;
+}
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+    margin-left: 0 !important;
+    border-bottom-right-radius: 20%;
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top:  55px; 
+    padding: 0;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding: 8px 0px;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
+}
+section{
+   padding: 80px 0px;
+   text-align: center;
+}
+h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left:15%;
+}
+.box{
+    padding: 1%;
+    margin-left: 10px;
+    
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    text-align: left;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+.box p{
+   font-size: 90%;
+   line-height: 145%;
+   text-align: left;
+   width: 80%;
+}
+.boxes{
+  margin-left: 120px;   
+}
+.meal-showcase{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 0; 
+    width: 100%;
+}
+.meal-showcase li{
+    margin: 0;
+    padding: 0;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    transition: transform 0.5s, opacity 0.5s;
+
+}
+.meal-photo img{
+    width: 100%;
+    display: block;
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+.meal-photo img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+    
+}
+.section-meals{
+    margin-bottom: 0px;
+    padding: 0;
+}
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+.mobi-view{
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.work-step {
+    margin-bottom: 50px;
+    margin-right: 25px;
+
+}
+.work-step div{
+    color: #e67e22;
+    display: inline-block;
+    border: 4px solid #e67e22;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    margin-right: 25px;
+    float: left;
+    font-size: 150%;
+}
+.work-step p{
+    text-align: left;
+}
+.work-step:last-of-type{
+    margin-bottom: 200px;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+.section-steps{
+    background-color: #f4f4f4;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.li img{
+    height: 219px;
+}
+.sf img{
+    height: 219px;
+}
+.city-feature{
+    text-align: left;
+}
+.ct img:hover{
+    transform: scale(1.05);
+    transition: transform 1.5s;
+}
+.ct h3{
+    text-align: center;
+}
+.ct h3:hover{
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22 ;
+    transition: border-bottom 0.2s, color 0.5s;
+}
+.ico a{
+    color: black;
+    text-decoration: none;
+}
+.ico a:hover{
+    color: #e67e22;
+    border-bottom: 2px solid #e67e22;
+}
+cite img{
+    height: 45px;
+    margin-right: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    vertical-align: middle;
+}
+.section-testimonials{
+    color: #ffffff;
+    margin-top: 350px;
+    background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('imgcss/vegetable-salad-table.png');
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section-testimonials h2{
+    
+    overflow: hidden;
+    text-align: center;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 25px;
+}
+blockquote:before{
+    content: '\201C';
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3px;
+}
+.plan-box{
+    text-align: left;
+    margin-left: 5%;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+}
+.section-plans{
+    text-align: center;
+     background-color: #f4f4f4;
+     overflow: hidden;
+}
+.plan-box ul{
+    list-style: none;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    align-items: left;
+}
+.plan-box div ul{
+    height: 179.1px;
+}
+.plan-box .str{
+    height: 157.21px;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+.plan-price-meal{
+    font-size: 80%;
+}
+.plan-price span{
+    font-size: 30%;
+    font-weight: 300;
+}
+.plan-box ul li{
+    padding: 5px 0px;
+}
+.plan-box div:last-child{
+    border: 0;
+}
+.icon-small{
+    color: #e67e22;
+}
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px ;
+}
+.span_1_of_3 .plan-box:hover{
+    transform: scale(1.15);
+    transition: transform 1.5s;
+}
+form .row{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.section-form{
+    width: 60%;
+    margin: 0 auto;
+}
+.span-2-of-3 {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+}
+.inpute{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.check {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+input[type=submit]:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+input[type=submit]{
+    width: 25%;
+    display: flex;
+}
+footer{
+    background-color: #333;
+    background-size: cover;
+    overflow: hidden;
+    font-smooth: 80%;
+    padding: 50px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:hover{
+    color: #fff;
+}
+footer .row p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 100px;
+    margin-bottom: 2px;
+}
+.fb:hover{
+    color:#3b5998
+}
+.twt:hover{
+    color: #00aced;
+}
+.gog:hover{
+    color: #dd4b39;
+}
+.insta:hover{
+    color: #517fa4;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
