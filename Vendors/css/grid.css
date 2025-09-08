@@ -1,0 +1,176 @@
+/* Responsive Grid System by Graham Miller */
+/* Version style: ~Jan 2021 */
+
+/* ========== SECTION RESET ========== */
+.section {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+/* ========== COLUMN SETUP ========== */
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+
+/* ========== CLEARFIX GROUPING ========== */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (hasLayout) */
+}
+
+/* ========== GRID SPANS ========== */
+
+/* 2 Columns */
+.span_2_of_2 { width: 100%; }
+.span_1_of_2 { width: 48.2%; }
+
+/* 3 Columns */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.1%; }
+.span_1_of_3 { width: 32.2%; }
+
+/* 4 Columns */
+.span_4_of_4 { width: 100%; }
+.span_3_of_4 { width: 74.6%; }
+.span_2_of_4 { width: 49.2%; }
+.span_1_of_4 { width: 23.8%;}
+
+
+/* 5 Columns */
+.span_5_of_5 { width: 100%; }
+.span_4_of_5 { width: 79.68%; }
+.span_3_of_5 { width: 59.36%; }
+.span_2_of_5 { width: 39.04%; }
+.span_1_of_5 { width: 18.72%; }
+
+/* 6 Columns */
+.span_6_of_6 { width: 100%; }
+.span_5_of_6 { width: 82.0%; }
+.span_4_of_6 { width: 64.0%; }
+.span_3_of_6 { width: 46.0%; }
+.span_2_of_6 { width: 28.0%; }
+.span_1_of_6 { width: 10.0%; }
+
+/* 7 Columns */
+.span_7_of_7 { width: 100%; }
+.span_6_of_7 { width: 85.5%; }
+.span_5_of_7 { width: 71.0%; }
+.span_4_of_7 { width: 56.5%; }
+.span_3_of_7 { width: 42.0%; }
+.span_2_of_7 { width: 27.5%; }
+.span_1_of_7 { width: 13.0%; }
+
+/* 8 Columns */
+.span_8_of_8 { width: 100%; }
+.span_7_of_8 { width: 87.4%; }
+.span_6_of_8 { width: 74.8%; }
+.span_5_of_8 { width: 62.2%; }
+.span_4_of_8 { width: 49.6%; }
+.span_3_of_8 { width: 37.0%; }
+.span_2_of_8 { width: 24.4%; }
+.span_1_of_8 { width: 11.8%; }
+
+/* 9 Columns */
+.span_9_of_9 { width: 100%; }
+.span_8_of_9 { width: 88.6%; }
+.span_7_of_9 { width: 77.2%; }
+.span_6_of_9 { width: 65.8%; }
+.span_5_of_9 { width: 54.4%; }
+.span_4_of_9 { width: 43.0%; }
+.span_3_of_9 { width: 31.6%; }
+.span_2_of_9 { width: 20.2%; }
+.span_1_of_9 { width: 8.8%; }
+
+/* 10 Columns */
+.span_10_of_10 { width: 100%; }
+.span_9_of_10 { width: 89.8%; }
+.span_8_of_10 { width: 79.6%; }
+.span_7_of_10 { width: 69.4%; }
+.span_6_of_10 { width: 59.2%; }
+.span_5_of_10 { width: 49.0%; }
+.span_4_of_10 { width: 38.8%; }
+.span_3_of_10 { width: 28.6%; }
+.span_2_of_10 { width: 18.4%; }
+.span_1_of_10 { width: 8.2%; }
+
+/* 11 Columns */
+.span_11_of_11 { width: 100%; }
+.span_10_of_11 { width: 90.8%; }
+.span_9_of_11 { width: 81.6%; }
+.span_8_of_11 { width: 72.4%; }
+.span_7_of_11 { width: 63.2%; }
+.span_6_of_11 { width: 54.0%; }
+.span_5_of_11 { width: 44.8%; }
+.span_4_of_11 { width: 35.6%; }
+.span_3_of_11 { width: 26.4%; }
+.span_2_of_11 { width: 17.2%; }
+.span_1_of_11 { width: 8.0%; }
+
+/* 12 Columns */
+.span_12_of_12 { width: 100%; }
+.span_11_of_12 { width: 91.6%; }
+.span_10_of_12 { width: 83.2%; }
+.span_9_of_12 { width: 74.8%; }
+.span_8_of_12 { width: 66.4%; }
+.span_7_of_12 { width: 58.0%; }
+.span_6_of_12 { width: 49.6%; }
+.span_5_of_12 { width: 41.2%; }
+.span_4_of_12 { width: 32.8%; }
+.span_3_of_12 { width: 24.4%; }
+.span_2_of_12 { width: 16.0%; }
+.span_1_of_12 { width: 7.6%; }
+
+/* ========== MOBILE STACKING ========== */
+@media only screen and (max-width: 480px) {
+  .col {
+    margin: 1% 0 1% 0;
+  }
+
+  .span_1_of_2,
+  .span_2_of_2,
+  .span_1_of_3,
+  .span_2_of_3,
+  .span_3_of_3,
+  .span_1_of_4,
+  .span_2_of_4,
+  .span_3_of_4,
+  .span_4_of_4,
+  .span_1_of_5,
+  .span_2_of_5,
+  .span_3_of_5,
+  .span_4_of_5,
+  .span_5_of_5,
+  .span_1_of_6,
+  .span_2_of_6,
+  .span_3_of_6,
+  .span_4_of_6,
+  .span_5_of_6,
+  .span_6_of_6,
+  .span_1_of_12,
+  .span_2_of_12,
+  .span_3_of_12,
+  .span_4_of_12,
+  .span_5_of_12,
+  .span_6_of_12,
+  .span_7_of_12,
+  .span_8_of_12,
+  .span_9_of_12,
+  .span_10_of_12,
+  .span_11_of_12,
+  .span_12_of_12 {
+    width: 100% !important;
+  }
+}
